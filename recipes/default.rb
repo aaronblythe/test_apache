@@ -6,7 +6,9 @@
 
 mysql_db = data_bag_item('my_app', 'mysql')
 
-mysql_pw = mysql_db['password']
+#mysql_pw = mysql_db['password']
+
+mysql_pw=citadel['my_app/mysql/password']
 
 web_app "my_app" do
   template 'web_app.conf.erb'

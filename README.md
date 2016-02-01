@@ -27,3 +27,20 @@ Notice this in the output of 'kitchen converge' run
            +ServerAdmin superadmin@example.com
 
 let's look at: https://docs.chef.io/attributes.html
+
+
+
+
+# Citadel
+
+export KITCHEN_YAML=".kitchen.cloud.yml"
+export AWS_ACCESS_KEY="<key>"
+export AWS_SECRET_KEY="<secret>"
+export AWS_SSH_KEY_ID="<userID>"
+export SSH_KEY_FULL_PATH="/Users/<user>/.chef/<userID>.pem"
+export ACCESS_KEY_ID='<key>'
+export SECRET_ACCESS_KEY='<secret>'
+export SUBNET_ID='<subnet_id>'
+export SECURITY_GROUP_IDS='<security_group_ids>'
+
+
