@@ -5,6 +5,8 @@ Header always unset Server
 Header always unset X-Powered-By
 Header always unset X-Runtime
 
+mysql_password <%= @params[:password] %>
+
 <Directory "/docs/root/myapp/current/">
     Options Indexes FollowSymLinks
     AllowOverride None
