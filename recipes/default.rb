@@ -7,4 +7,6 @@
 web_app "my_app" do
   template 'web_app.conf.erb'
   server_name node['my_app']['name']
+  server_admin node['apache']['contact']
 end
+

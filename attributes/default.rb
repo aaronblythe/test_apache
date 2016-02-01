@@ -5,3 +5,5 @@
 # Copyright (c) 2016 The Authors, All Rights Reserved.
 
 default['my_app']['name'] = 'test_application'
+
+default['apache']['contact'] = 'admin@example.com'
