@@ -5,7 +5,7 @@ TODO: Enter the cookbook description here.
 
 # Role Example:
 
-Notice this in the output of the 'kitchen converge run'
+Notice this in the output of the 'kitchen converge' run
 
        Recipe: test_apache::default
          * template[/etc/httpd/sites-available/my_app.conf] action create
@@ -20,3 +20,10 @@ Notice this in the output of the 'kitchen converge run'
     kitchen login
     cd /etc/httpd/sites-enabled/
     less my_app.conf
+
+Notice this in the output of 'kitchen converge' run
+
+           -ServerAdmin admin@example.com
+           +ServerAdmin superadmin@example.com
+
+let's look at: https://docs.chef.io/attributes.html

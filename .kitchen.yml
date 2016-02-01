@@ -11,6 +11,7 @@ platforms:
 
 suites:
   - name: default
+    roles_path: 'test/integration/roles'
     run_list:
-      - recipe[test_apache::default]
+      - role[my_apache]
     attributes:
