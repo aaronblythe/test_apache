@@ -1,11 +1,10 @@
-#ServerAdmin <%= node['apache']['contact'] %>
-
-
 Header always unset Server
 Header always unset X-Powered-By
 Header always unset X-Runtime
 
-<Directory "/docs/root/myapp/current/">
+DocumentRoot "/var/www/html/"
+
+<Directory "/var/www/html/">
     Options Indexes FollowSymLinks
     AllowOverride None
 
@@ -16,8 +15,10 @@ Header always unset X-Runtime
         RewriteRule ^(.*)$ / [R,L]
     </IfModule>
 
-    Order allow,deny
-    Allow from all
+    #Apache 2.2
+    #Order allow,deny
+    #Allow from all
+    #Apache 2.4
+    Require all granted
 </Directory>
-
 
