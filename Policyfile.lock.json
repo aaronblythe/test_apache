@@ -1,0 +1,75 @@
+{
+  "revision_id": "29fc5835434005ef05cbbc26cfb9f59ae5c9cfdf1fb9058dffd92eeb6c10082a",
+  "name": "test_apache",
+  "run_list": [
+    "recipe[test_apache::default]"
+  ],
+  "cookbook_locks": {
+    "test_apache": {
+      "version": "0.1.0",
+      "identifier": "be6fa0960747ff49b86afd2c7e61e1a47132de22",
+      "dotted_decimal_identifier": "53602981077534719.20750442953473633.248096390045218",
+      "source": ".",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": null,
+        "revision": "b29bf09fd4c55ec5caac66b534ff77b6d8f8560a",
+        "working_tree_clean": false,
+        "published": true,
+        "synchronized_remote_branches": [
+          "origin/HEAD -> origin/master",
+          "origin/attributes",
+          "origin/citadel",
+          "origin/docker_networking",
+          "origin/encrypted_data_bags",
+          "origin/master",
+          "origin/role_attribute"
+        ]
+      },
+      "source_options": {
+        "path": "."
+      }
+    },
+    "apache2": {
+      "version": "3.2.2",
+      "identifier": "3b740b51a1fd39052c906d0e830737f551b706b7",
+      "dotted_decimal_identifier": "16734615588961593.1456373700133639.61526777464503",
+      "cache_key": "apache2-3.2.2-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/apache2/versions/3.2.2/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/apache2/versions/3.2.2/download",
+        "version": "3.2.2"
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "test_apache",
+        ">= 0.0.0"
+      ],
+      [
+        "apache2",
+        "= 3.2.2"
+      ]
+    ],
+    "dependencies": {
+      "apache2 (3.2.2)": [
+
+      ],
+      "test_apache (0.1.0)": [
+        [
+          "apache2",
+          ">= 0.0.0"
+        ]
+      ]
+    }
+  }
+}
