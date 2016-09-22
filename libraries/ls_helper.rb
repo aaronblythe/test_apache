@@ -3,13 +3,13 @@
 # Cookbook Name:: test_apache
 # File Name:: ls_helper.rb
 
-
 module TestApache
-  # Module contains functions to configure alerts in a Splunk system
   module LsHelper
-    def self.get_ls_output
+    include Chef::Mixin::ShellOut
+
+    def get_ls_output
       command = 'ls'
-      command_out = exec(command)
+      command_out = shell_out!(command).stdout
     end
   end
 end

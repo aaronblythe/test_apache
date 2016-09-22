@@ -1,5 +1,5 @@
 {
-  "revision_id": "29fc5835434005ef05cbbc26cfb9f59ae5c9cfdf1fb9058dffd92eeb6c10082a",
+  "revision_id": "bc50b0381720da0eacb26ef69abc8e5f30e1325adb808569a0717df2352253ae",
   "name": "test_apache",
   "run_list": [
     "recipe[test_apache::default]"
@@ -7,24 +7,18 @@
   "cookbook_locks": {
     "test_apache": {
       "version": "0.1.0",
-      "identifier": "be6fa0960747ff49b86afd2c7e61e1a47132de22",
-      "dotted_decimal_identifier": "53602981077534719.20750442953473633.248096390045218",
+      "identifier": "30b0fb2ac33bde413d9a1bc7db107d173415de3b",
+      "dotted_decimal_identifier": "13705391682829278.18363605586533136.137538611568187",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": null,
-        "revision": "b29bf09fd4c55ec5caac66b534ff77b6d8f8560a",
+        "revision": "1e581975f2f8202b5007f64507714220ed173d77",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
-          "origin/HEAD -> origin/master",
-          "origin/attributes",
-          "origin/citadel",
-          "origin/docker_networking",
-          "origin/encrypted_data_bags",
-          "origin/master",
-          "origin/role_attribute"
+          "origin/library"
         ]
       },
       "source_options": {

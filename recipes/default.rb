@@ -4,7 +4,8 @@
 #
 # Copyright (c) 2016 The Authors, All Rights Reserved.
 
-template '/tmp/ls.txt' do
+template '/etc/ls.txt' do
+  helpers(TestApache::LsHelper)
   source 'ls.txt.erb'
   owner 'root'
   group 'root'
